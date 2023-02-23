@@ -1,0 +1,17 @@
+version: '3.1'
+services:
+    postgres:
+        image: 'postgres:15'
+        working_dir: /application
+        volumes:
+            - './docker/postgresql_data:/var/lib/postgresql/data'
+        environment:
+            - POSTGRES_USER=root
+            - POSTGRES_PASSWORD=root
+            - POSTGRES_DB=app
+        ports:
+            - '38004:5432'
+
+    webserver:
+        ports:
+            - '38000:80'
