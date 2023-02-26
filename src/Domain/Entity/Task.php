@@ -81,4 +81,14 @@ class Task
     {
         $this->assignee = $assignee;
     }
+
+    public function getUuid(): UuidInterface
+    {
+        return $this->uuid;
+    }
+
+    public function getCreatedAt(): \DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
 }

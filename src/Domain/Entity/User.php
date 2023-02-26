@@ -102,4 +102,9 @@ class User
     {
         $this->isActive = false;
     }
+
+    public function getUuid(): UuidInterface
+    {
+        return $this->uuid;
+    }
 }
