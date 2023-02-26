@@ -1,5 +1,7 @@
-controllers:
+task:
     resource:
-        path: ../src/Infrastructure/Controller/
-        namespace: App\Infrastructure\Controller
-    type: attribute
+        path: ../src/Infrastructure/Controller/API/v1/Task
+        namespace: App\Infrastructure\Controller\API\v1\Task
+    type: annotation
+    prefix: '/api/v1/task'
+    name_prefix: 'api_v1_task_'
